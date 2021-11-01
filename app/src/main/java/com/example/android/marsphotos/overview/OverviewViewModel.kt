@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2021 The Android Open Source Project.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.example.android.marsphotos.overview
 
 import androidx.lifecycle.LiveData
@@ -23,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.android.marsphotos.network.MarsApi
 import com.example.android.marsphotos.network.MarsPhoto
 import kotlinx.coroutines.launch
+import java.util.*
 
 enum class MarsApiStatus { LOADING, ERROR, DONE }
 
@@ -64,6 +49,8 @@ class OverviewViewModel : ViewModel() {
                 _status.value = MarsApiStatus.DONE
             } catch (e: Exception) {
                 _status.value = MarsApiStatus.ERROR
+// Here after the error state set the _photos to an empty list. This clears the Recycler view
+// Unresolved reference: listOf error started after last Android Gradle update, it doesn't affect the app functionality
                 _photos.value = listOf()
             }
         }
