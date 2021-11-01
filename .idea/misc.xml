@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/SERGIO/AndroidStudioProjects/kotlin-mars-photos-app/app/src/main/res/drawable/ic_broken_image.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/SERGIO/AndroidStudioProjects/kotlin-mars-photos-app/app/src/main/res/drawable/loading_img.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/kotlin-mars-photos-app/app/src/main/res/layout/activity_main.xml" value="0.2536231884057971" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/kotlin-mars-photos-app/app/src/main/res/layout/fragment_overview.xml" value="0.2536231884057971" />
         <entry key="..\:/Users/SERGIO/AndroidStudioProjects/kotlin-mars-photos-app/app/src/main/res/layout/grid_view_item.xml" value="0.2536231884057971" />
