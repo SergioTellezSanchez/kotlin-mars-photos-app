@@ -9,7 +9,7 @@ import coil.load
 import com.example.android.marsphotos.network.MarsPhoto
 import com.example.android.marsphotos.overview.MarsApiStatus
 import com.example.android.marsphotos.overview.PhotoGridAdapter
-import java.util.*
+import kotlin.collections.*
 
 /**
  * Updates the data shown in the [RecyclerView].

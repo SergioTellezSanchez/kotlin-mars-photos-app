@@ -50,7 +50,6 @@ class OverviewViewModel : ViewModel() {
             } catch (e: Exception) {
                 _status.value = MarsApiStatus.ERROR
 // Here after the error state set the _photos to an empty list. This clears the Recycler view
-// Unresolved reference: listOf error started after last Android Gradle update, it doesn't affect the app functionality
                 _photos.value = listOf()
             }
         }
